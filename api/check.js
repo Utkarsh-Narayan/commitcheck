@@ -4,7 +4,7 @@
 // POST /api/check  -> checks the visitor cap, asks Gemini for a plan, stores the exchange in Supabase
 // Keys are read from Vercel environment variables only. No keys in this file.
 
-const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash-lite";
+const MODEL = process.env.GEMINI_MODEL || "gemini-3.5-flash-lite";
 const MAX_OUTPUT_TOKENS = 300;
 const MAX_REQUESTS_PER_VISITOR = 5;
 const TABLE = "move_checks";
